@@ -43,7 +43,7 @@ import com.example.mycity.model.CategoryItem
 
 
 @Composable
-fun MyCityListItem(
+private fun MyCityListItem(
     category: CategoryItem,
     onItemClick: (CategoryItem) -> Unit,
     modifier: Modifier = Modifier
@@ -104,7 +104,7 @@ private fun MyCityListImageItem(category: CategoryItem, modifier: Modifier = Mod
 }
 
 @Composable
-private fun MyCityList(
+fun MyCityList(
     category: List<CategoryItem>,
     onClick: (CategoryItem) -> Unit,
     modifier: Modifier = Modifier,
@@ -125,7 +125,7 @@ private fun MyCityList(
 }
 
 @Composable
-private fun MyCityDetail(
+fun MyCityDetail(
     selectedPlace: CategoryItem,
     contentPadding: PaddingValues,
     modifier: Modifier = Modifier
@@ -189,7 +189,7 @@ private fun MyCityDetail(
 
 @SuppressLint("ContextCastToActivity")
 @Composable
-private fun MyCityListAndDetails(
+fun MyCityListAndDetails(
     category: List<CategoryItem>,
     selectedPlace: CategoryItem,
     onClick: (CategoryItem) -> Unit,

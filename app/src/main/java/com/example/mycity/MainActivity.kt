@@ -19,9 +19,8 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             MyCityTheme {
-//                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-//                    MyCityApp()
-//                }
+                    MyCityApp()
+
             }
         }
     }
@@ -30,8 +29,8 @@ class MainActivity : ComponentActivity() {
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun MyCityPreview() {
     MyCityTheme {
-        // MyCityApp()
+        MyCityApp()
     }
 }
